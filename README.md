@@ -25,7 +25,6 @@ This project demonstrates how to connect React with Django APIs and store data i
 
 ## 📂 Project Structure
 
-```bash
 contact-manager/
 │
 ├── backend/ # Django backend
@@ -50,7 +49,7 @@ contact-manager/
 ```bash
 git clone [https://github.com/your-username/contact-manager.git](https://github.com/your-username/contact-manager.git)
 cd contact-manager
-
+```
 
 
 ## ⚙️ Installation & Setup
@@ -60,35 +59,45 @@ cd contact-manager
 ```bash
 git clone [https://github.com/your-username/contact-manager.git](https://github.com/your-username/contact-manager.git)
 cd contact-manager
+
+```
 ### 2️⃣ Backend Setup (Django + MongoDB)
-Bash
+
+
+```bash
 
 cd backend
 python -m venv venv
 venv\Scripts\activate   # On Windows
 source venv/bin/activate   # On macOS/Linux
 pip install django djangorestframework djongo pymongo django-cors-headers
+```
+
 Start Django server:
 
-Bash
+```bash
 
 python manage.py makemigrations
 python manage.py migrate
 python manage.py runserver
 The backend runs at: http://127.0.0.1:8000/
+```
 
 ### 3️⃣ Frontend Setup (React)
-Bash
+```bash
 
 cd ../frontend
 npm install
 npm start
 The frontend runs at: http://localhost:3000/
+```
 
 ## 📡 API Endpoints
 Method	Endpoint	Description
+```bash
 GET	/contacts/	Fetch all contacts
 POST	/contacts/	Add new contact
+```
 
 ## Export to Sheets
 🖼️ Screenshots
